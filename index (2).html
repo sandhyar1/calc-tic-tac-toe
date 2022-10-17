@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Combined project</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="left">
+                <div class="line"></div>
+                <div class="box bt bl"><span class="text"></span></div>
+                <div class="box bt"><span class="text"></span></div>
+                <div class="box br bt"><span class="text"></span></div>
+                <div class="box bl"><span class="text"></span></div>
+                <div class="box"><span class="text"></span></div>
+                <div class="box br"><span class="text"></span></div>
+                <div class="box bl bd"><span class="text"></span></div>
+                <div class="box bd"><span class="text"></span></div>
+                <div class="box br bd"><span class="text"></span></div>
+            </div>
+
+            <div class="right">
+                <div>
+                    <span class="info">Turn for X</span>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Container">
+
+            <h1>Calculator</h1>
+            <div class="calculator">
+                <input type="text" id="screen" value="">
+                <table>
+                    <tr>
+                        <td><button class="cover" id="clr" onclick="clr()">Clear</button></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><button class="cal" onclick="entry(1)">7</button></td>
+                        <td><button class="cal" onclick="entry(2)">8</button></td>
+                        <td><button class="cal" onclick="entry(3)">9</button></td>
+                        <td><button class="cal" onclick="entry(4)">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="cal" onclick="entry(5)">4</button></td>
+                        <td><button class="cal" onclick="entry(6)">5</button></td>
+                        <td><button class="cal" onclick="entry(7)">6</button></td>
+                        <td><button class="cal" onclick="entry(8)">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="cal" onclick="entry(9)">1</button></td>
+                        <td><button class="cal" onclick="entry(10)">2</button></td>
+                        <td><button class="cal" onclick="entry(11)">3</button></td>
+                        <td><button class="cal" onclick="entry(12)">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="cal" onclick="entry(13)"> 0 </button></td>
+                        <td><button class="cal" onclick="entry(14)">.</button></td>
+                        <td><button class="cal" id="equal" onclick="calculate()">=</button></td>
+                        <td><button class="cal" onclick="entry(16)">+</button></td>
+                    </tr>
+                </table>
+
+
+                <footer>Copyright &copy;Sandhya Rani.in 2022</footer>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="App.js"></script>
+</body>
+
+</html>
